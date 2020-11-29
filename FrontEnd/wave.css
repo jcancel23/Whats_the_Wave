@@ -1,0 +1,224 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #808080;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #003366;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.postButton{
+  background-color:#808080;
+  font-size: 20px;
+  border-radius: 12px;
+  color:white;
+  padding: 22px 16px;
+  float: right;
+}
+
+.postButton:hover{
+  background-color: #003366;
+}
+
+.filter button{
+  background-color:#808080;
+  font-size: 20px;
+  border-radius: 12px;
+  width:15%;
+  color:white;
+  padding: 15px 16px;
+  display:block;
+}
+.filt{
+  margin-left: .75em;
+  margin-bottom: 0;
+  font-size: 45px;
+  color:#003366;
+  float:left;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 30%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 70;
+  left: 0;
+  background-color: #808080;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: white;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #003366;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.center{
+   background-color: #808080;
+  width: 300px;
+  border: 25px black;
+  padding: 60px;
+  color:white;
+  margin: auto;
+  text-align: center;
+}
+.center2{
+   background-color: #808080;
+  width: 500px;
+  height:100%;
+  border: 25px black;
+  padding: 60px;
+  color:white;
+  margin: auto;
+  text-align: center;
+}
+
+.birth{
+  font-size: 20px;
+}
+
+.sendMessage{
+  background-color:#808080;
+  font-size: 20px;
+  border-radius: 12px;
+  color:white;
+  padding: 22px 16px;
+  float: right;
+}
+
+.sendMessage:hover{
+  background-color: #003366;
+}
+
+.newEvent{
+  background-color:#808080;
+  font-size: 20px;
+  border-radius: 12px;
+  color:white;
+  padding: 22px 16px;
+  float: right;
+}
+
+.newEvent:hover{
+  background-color: #003366;
+}
+
+.nCenter{
+  background-color: #808080;
+  width: 500px;
+  height:100%;
+  border: 25px black;
+  padding: 60px;
+  color:white;
+  margin: auto;
+  text-align: center;
+}
+
+.content2{
+width:450px;
+height:300px;
+padding-left:0;
+padding-top:0;
+padding-bottom:0.4em;
+padding-right: 0.4em;
+}
+
+.rec{
+  font-size: 25;
+}
+
+.cont{
+  font-size: 25;
+}
+
+.btn {
+  background-color: #003366; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.map{
+  height: 500px;
+  width:100%;
+}
+
+.profman{
+  text-align: left;
+  font-size: 22;
+}

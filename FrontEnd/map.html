@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<link href="wave.css" rel="stylesheet" />
+<head>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    #map{
+      height:500px;
+      width:60%;
+      margin-left: 280px;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><a href="file:///C:/Users/justin/Desktop/map.html" class = "active">Map</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/feed.html">Feed</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/messages.html">Messages</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/profileI.html">Profile</a></li>
+  <li style="float:right"><a href="file:///C:/Users/justin/Desktop/loginI.html">Logout</a></li>
+  <li style="float:right"><img src="wtw.png" alt ="logo" style = "height: 40px; width: 55px;">
+</ul>
+<br>
+   <button class = "newEvent" id="newE" onclick="dropPin()">Create an event</button>
+
+
+<div class="sidenav">
+  <button class="dropdown-btn">Radius
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">2 miles</a>
+    <a href="#">5 miles</a>
+    <a href="#">10 miles</a>
+    <a href="#">20 miles</a>
+  </div>
+  <button class="dropdown-btn">Friends
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Friends only</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">University
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Enrolled Students</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">Age
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">18-25</a>
+    <a href="#">25-30</a>
+    <a href="#">35+</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">Gender
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Male only</a>
+    <a href="#">Female only</a>
+    <a href="#">All local users</a>
+  </div>
+</div>
+
+<div id="map">
+ 
+  </div>
+
+<script>
+function initMap(){
+  var location = {lat: 39.401859, lng: -76.605049};
+  var map = new google.maps.Map(document.getElementById("map"),{
+    zoom: 17,
+    center: location
+  })
+}
+function dropPin(){
+  var location = {lat: 39.401859, lng: -76.605049};
+  var map = new google.maps.Map(document.getElementById("map"),{
+    zoom: 17,
+    center: location
+  })
+var marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    draggable:true,
+    title:"Event"
+});
+
+  }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEUsPi5XM2naSae-RMCq42gp2VQJ55vpQ&callback=initMap">
+  </script>
+
+<script>
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}</script>
+
+	</body>
+  </html>

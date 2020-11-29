@@ -1,0 +1,77 @@
+<link href="wave.css" rel="stylesheet" />
+
+<head>
+</head>
+<body>
+	<ul>
+  <li><a href="file:///C:/Users/justin/Desktop/map.html">Map</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/feed.html" class = "active">Feed</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/messages.html">Messages</a></li>
+  <li><a href="file:///C:/Users/justin/Desktop/profileI.html">Profile</a></li>
+  <li style="float:right"><a href="file:///C:/Users/justin/Desktop/loginI.html">Logout</a></li>
+  <li style="float:right"><img src="wtw.png" alt ="logo" style = "height: 40px; width: 55px;">
+</ul>
+<br>
+   <button class = "postButton">Post</button>
+	
+<div class="sidenav">
+  <button class="dropdown-btn">Radius
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">2 miles</a>
+    <a href="#">5 miles</a>
+    <a href="#">10 miles</a>
+    <a href="#">20 miles</a>
+  </div>
+  <button class="dropdown-btn">Friends
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Friends only</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">University
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Enrolled Students</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">Age
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">18-25</a>
+    <a href="#">25-30</a>
+    <a href="#">35+</a>
+    <a href="#">All local users</a>
+  </div>
+  <button class="dropdown-btn">Gender
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Male only</a>
+    <a href="#">Female only</a>
+    <a href="#">All local users</a>
+  </div>
+</div>
+
+<script>
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}</script>
+
+	</body>
+
